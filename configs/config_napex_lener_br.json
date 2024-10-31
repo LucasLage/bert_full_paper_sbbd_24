@@ -1,0 +1,26 @@
+{
+  "log_path": "./log.log",
+  "batch_size": 64,
+  "lr": 0.00001, 
+  "num_epochs": 5,
+  "max_seq_length": 50, 
+  "device": "cuda",
+  "columns": ["item_id", "original_dsc", "nome_nat_despesa"],
+  "doc_id": "item_id",
+  "text_col": "original_dsc",
+  "target_col": "nome_nat_despesa",
+  "input_path": "./data/",
+  "input_name": "nat_despesa_sample.csv",
+  "compression": null,
+  "separator": ";",
+  "model_name": "lener_br",
+  "model_path": "./models/",
+  "output_path": "./outputs/",
+  "task": "item_classification",
+  "class_names": {"OBRAS": 0,
+    "SERVICOS": 1,
+    "MATERIAL CONSUMO": 2,
+    "MATERIAL PERMANENTE": 3,
+    "LOCACAO": 4
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "model_path": "setu4993/smaller-LaBSE",
+  "model_name": "LaBSE",
+  "data_path": "./data/",
+  "dataset": "political",
+  "text_col": "preprocessed_text",
+  "max_seq_length": 50, 
+  "checkpoint_dir": "./checkpoints/",
+  "num_epochs": 10,
+  "batch_size": 64,
+  "output_dir": "./finetuned_models/"
+}

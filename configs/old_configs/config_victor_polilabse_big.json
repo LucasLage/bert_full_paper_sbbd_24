@@ -1,0 +1,26 @@
+{
+  "log_path": "./log.log",
+  "batch_size": 64,
+  "lr": 0.00001, 
+  "num_epochs": 5,
+  "max_seq_length": 200, 
+  "device": "cuda",
+  "doc_id": "process_id",
+  "text_col": "preprocessed_text",
+  "target_col": "document_type",
+  "input_path": "./data/",
+  "input_name": "victor_small.csv",
+  "compression": null,
+  "separator": ",",
+  "model_name": "finetuned-labse-political-big",
+  "model_path": "./finetuned_models/",
+  "output_path": "./outputs/",
+  "task": "item_classification",
+  "class_names": {"acordao_de_2_instancia": 0,
+    "sentenca": 1,
+    "peticao_do_RE": 2,
+    "despacho_de_admissibilidade": 3,
+    "agravo_em_recurso_extraordinario": 4,
+    "outros": 5
+  }
+}

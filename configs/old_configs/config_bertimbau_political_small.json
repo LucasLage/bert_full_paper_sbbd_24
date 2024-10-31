@@ -1,0 +1,13 @@
+{
+    "model_path": "neuralmind/bert-base-portuguese-cased",
+    "model_name": "bertimbau",
+    "data_path": "./data/",
+    "dataset": "political_small",
+    "text_col": "dsc_item",
+    "max_seq_length": 50, 
+    "checkpoint_dir": "./checkpoint/",
+    "num_epochs": 10,
+    "batch_size": 64,
+    "output_dir": "./finetuned_models/"
+  }
+  

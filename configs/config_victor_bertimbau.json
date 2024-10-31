@@ -1,0 +1,27 @@
+{
+  "log_path": "./log.log",
+  "batch_size": 64,
+  "lr": 0.00001, 
+  "num_epochs": 5,
+  "max_seq_length": 200, 
+  "device": "cuda",
+  "columns": ["process_id", "preprocessed_text", "document_type"],
+  "doc_id": "process_id",
+  "text_col": "preprocessed_text",
+  "target_col": "document_type",
+  "input_path": "./data/",
+  "input_name": "victor_medium.csv",
+  "compression": null,
+  "separator": ",",
+  "hugging": "neuralmind/bert-base-portuguese-cased",
+  "model_name": "bertimbau",
+  "model_path": "./models/",
+  "output_path": "./outputs/",
+  "class_names": {"acordao_de_2_instancia": 0,
+    "sentenca": 1,
+    "peticao_do_RE": 2,
+    "despacho_de_admissibilidade": 3,
+    "agravo_em_recurso_extraordinario": 4,
+    "outros": 5
+  }
+}

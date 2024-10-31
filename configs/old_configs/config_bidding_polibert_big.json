@@ -1,0 +1,20 @@
+{
+  "log_path": "./log.log",
+  "batch_size": 64,
+  "lr": 0.00001, 
+  "num_epochs": 5,
+  "max_seq_length": 50, 
+  "device": "cuda",
+  "doc_id": "item_id",
+  "text_col": "original_dsc",
+  "target_col": "product_service_flag",
+  "input_path": "./data/",
+  "input_name": "bidding_items.csv",
+  "compression": null,
+  "separator": ";",
+  "model_name": "finetuned-bertimbau-political-big",
+  "model_path": "./finetuned_models/",
+  "output_path": "./outputs/",
+  "task": "item_classification",
+  "class_names": {"PRODUTO": 1, "SERVICO": 0}
+}

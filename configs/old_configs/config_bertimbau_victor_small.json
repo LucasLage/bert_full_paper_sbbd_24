@@ -1,0 +1,13 @@
+{
+    "model_path": "neuralmind/bert-base-portuguese-cased",
+    "model_name": "bertimbau",
+    "data_path": "./data/",
+    "dataset": "victor_small",
+    "text_col": "preprocessed_text",
+    "max_seq_length": 200, 
+    "checkpoint_dir": "./checkpoint/",
+    "num_epochs": 10,
+    "batch_size": 64,
+    "output_dir": "./finetuned_models/"
+  }
+  
